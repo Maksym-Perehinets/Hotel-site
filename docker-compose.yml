@@ -18,5 +18,8 @@ services:
       - type: bind
         source: ./frontend/src
         target: /app/src
+      - type: bind
+        source: ./frontend/index.html
+        target: /app/index.html
     ports:
       - "5173:5173"
