@@ -10,7 +10,7 @@ COPY frontend/package-lock.json ./
 RUN npm install
 
 # Add app
-COPY frontend/ ./
+COPY frontend/ .
 
 EXPOSE 5173
 
