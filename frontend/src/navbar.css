@@ -5,10 +5,11 @@ nav {
   
   nav ul {
     list-style-type: none;
-    /* padding: 0px; */
     margin: 0px;
     display: flex;
     width: 100%;
+    margin-left: 1%;
+    user-select: none;
   }
   
   nav ul li {
@@ -25,4 +26,23 @@ nav {
     padding: 10px 15px;
     display: block;
   }
+
+nav ul li img {
+  vertical-align: middle;
+  padding: 10px 10px;
+  margin-right: 580 px;
+  
+
+}
+
+nav #profilePic {
+  width: 20%;
+  float: right;
+  height: 35px;
+  width: 35px;
+  border: 5px solid;
+  border-radius: 50%;
+}
+
+
   
