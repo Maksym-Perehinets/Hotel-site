@@ -4,5 +4,22 @@ services:
     build:
       context: .
       dockerfile: docker/backend/Dockerfile
+    volumes:
+      - type: bind
+        source: ./backend
+        target: /code/backend_app
     ports:
       - "8080:80"
+  frontend:
+    build:
+      context: .
+      dockerfile: docker/frontend/Dockerfile
+    volumes:
+      - type: bind
+        source: ./frontend/src
+        target: /app/src
+      - type: bind
+        source: ./frontend/index.html
+        target: /app/index.html
+    ports:
+      - "5173:5173"
