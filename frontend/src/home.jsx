@@ -7,7 +7,11 @@ const home  = () => {
             <div id='main'>
                 <div id="info-div">
                     hui
-                </div>
+            </div>
+            
+            <div id='photos-div'>
+
+            </div>
             </div>
         </>
     );
