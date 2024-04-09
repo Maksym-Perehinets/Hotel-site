@@ -31,17 +31,21 @@ nav ul li img {
   vertical-align: middle;
   padding: 10px 10px;
   margin-right: 580 px;
+  width: 15px;
+  height: 15px;
   
 
 }
 
-nav #profilePic {
-  width: 20%;
+nav ul li #profilePic {
   float: right;
-  height: 35px;
-  width: 35px;
-  border: 5px solid;
+  padding: 10px 10px;
+  height: 20px;
+  width: 20px;
+  border: 1px solid;
   border-radius: 50%;
+  vertical-align: middle;
+  margin-left: 1200px;
 }
 
 
