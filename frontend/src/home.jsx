@@ -10,7 +10,6 @@ const home  = () => {
             </div>
             
             <div id='photos-div'>
-
             </div>
             </div>
         </>
