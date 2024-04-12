@@ -9,8 +9,9 @@ const home  = () => {
                     hui
             </div>
             
-            <div id='photos-div'>
-            </div>
+                <div id='photos-div'>
+                    
+                </div>
             </div>
         </>
     );

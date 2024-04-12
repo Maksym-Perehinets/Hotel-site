@@ -5,7 +5,7 @@ import './App.css'
 const About = () => {
     return (
     <>
-    <Navbar />;
+    <div>hellow orld</div>
     
     </>
     );

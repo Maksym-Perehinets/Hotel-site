@@ -2,7 +2,7 @@ import './App.css'
 import NavBar from './navbar'
 import './navbar.css'
 import Home from './home.jsx'
-import About from '.about.jsx'
+
 
 function App() {
 
@@ -10,7 +10,6 @@ function App() {
     <>
       <NavBar />
       <Home/>
-      <About/>
 
     </>
   )
