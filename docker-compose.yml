@@ -10,6 +10,8 @@ services:
         target: /code/backend_app
     ports:
       - "8080:80"
+    depends_on:
+      - database
   frontend:
     build:
       context: .
@@ -23,3 +25,16 @@ services:
         target: /app/index.html
     ports:
       - "5173:5173"
+    depends_on:
+      - backend
+      - database
+  database:
+    image: mysql:latest
+    volumes:
+      - type: bind
+        source: ./docker/database/init.sql
+        target: /docker-entrypoint-initdb.d/init.sql
+    environment:
+      - MYSQL_ROOT_PASSWORD=secure-password123456
+    ports:
+      - "3306:3306"

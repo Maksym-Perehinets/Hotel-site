@@ -28,3 +28,4 @@ setuptools~=66.1.1
 python-dotenv~=1.0.0
 sqlalchemy~=2.0.25
 greenlet~=3.0.3
+pydantic-settings==2.0.3
