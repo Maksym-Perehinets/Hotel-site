@@ -7,7 +7,7 @@ nav {
     list-style-type: none;
     margin: 0px;
     display: flex;
-    width: 100%;
+    width: 90%;
     margin-left: 1%;
     user-select: none;
   }
@@ -44,8 +44,8 @@ nav ul li #profilePic {
   width: 20px;
   border: 1px solid;
   border-radius: 50%;
-  vertical-align: middle;
-  margin-left: 1200px;
+  vertical-align: right;
+  margin-left: 1350px;
 }
 
 
