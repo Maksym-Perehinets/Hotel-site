@@ -7,7 +7,10 @@ services:
     volumes:
       - type: bind
         source: ./backend
-        target: /code/backend_app
+        target: /code/backend
+    networks:
+      main:
+       ipv4_address: 10.105.10.2
     ports:
       - "8080:80"
     depends_on:
@@ -29,12 +32,26 @@ services:
       - backend
       - database
   database:
-    image: mysql:latest
+    build:
+      context: .
+      dockerfile: docker/database/Dockerfile
     volumes:
       - type: bind
         source: ./docker/database/init.sql
         target: /docker-entrypoint-initdb.d/init.sql
     environment:
       - MYSQL_ROOT_PASSWORD=secure-password123456
+    networks:
+      main:
+        ipv4_address: 10.105.10.3
     ports:
       - "3306:3306"
+
+
+networks:
+  main:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.105.10.0/24
+          gateway: 10.105.10.1
