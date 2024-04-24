@@ -5,7 +5,7 @@ const InfoDiv = () => {
   return (
     
         <div id="info-div">
-                    <h1>About our Hotel</h1>
+                    <h1>Riverside Oasis</h1>
                     <p>
                         Welcome to the Riverside Oasis, a luxurious hotel nestled in the heart of Kyiv, Ukraine, 
                         overlooking the picturesque Dnipro River. Boasting a prime location, our hotel offers guests 
@@ -46,7 +46,7 @@ const InfoDiv = () => {
                         We look forward to welcoming you to our oasis by the river.
                     </p>
 
-                    <button type="button">Reserve some room</button>
+                    {/* <button type="button">Reserve some room</button> */}
 
             </div>
     
