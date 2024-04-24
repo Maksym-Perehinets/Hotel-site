@@ -5,25 +5,28 @@ from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
 
+
 class RoomStatus(Base):
     __tablename__ = 'roomStatus'
 
     idroomStatus = Column(Integer, primary_key=True, autoincrement=True)
-    description = Column(Text, nullable=False)
-    roomStatus = Column(Integer, nullable=False)
+    status_description = Column(Text, name="description", nullable=False)
+    status = Column(Integer, name="roomStatus", nullable=False)
+
 
 class Room(Base):
     __tablename__ = 'rooms'
 
-    idrooms = Column(Integer, primary_key=True, autoincrement=True)
+    id = Column(Integer, name="idrooms", primary_key=True, autoincrement=True)
     roomStatus_idroomStatus = Column(Integer, ForeignKey('roomStatus.idroomStatus'), nullable=False)
-    roomNumber = Column(Integer, nullable=False)
-    roomDescription = Column(Text, nullable=False)
-    numberOfBeds = Column(Integer, nullable=False)
-    hasKitchen = Column(Boolean, nullable=False)
-    price_perday = Column(Integer, nullable=False)
+    number = Column(Integer, name="roomNumber", nullable=False)
+    description = Column(Text, name="roomDescription", nullable=False)
+    number_of_beds = Column(Integer, name="numberOfBeds", nullable=False)
+    kitchen = Column(Boolean, name="hasKitchen", nullable=False)
+    price_per_day = Column(Integer, name="price_perday", nullable=False)
 
     room_status = relationship("RoomStatus")
+
 
 class RoomReview(Base):
     __tablename__ = 'roomReviews'
@@ -35,14 +38,16 @@ class RoomReview(Base):
 
     room = relationship("Room")
 
+
 class RoomPicture(Base):
     __tablename__ = 'roomPicture'
 
     idroomPicture = Column(Integer, primary_key=True, autoincrement=True)
-    picURL = Column(Text, nullable=False)
+    picture_url = Column(Text, name="picURL", nullable=False)
     rooms_idrooms = Column(Integer, ForeignKey('rooms.idrooms'), nullable=False)
 
     room = relationship("Room")
+
 
 class User(Base):
     __tablename__ = 'users'
@@ -55,6 +60,7 @@ class User(Base):
     user_first_name = Column(VARCHAR(45), nullable=False)
     user_last_name = Column(VARCHAR(45), nullable=False)
     user_password_salted = Column(VARCHAR(45))
+
 
 class UserAddress(Base):
     __tablename__ = 'userAddress'

@@ -1,27 +1,58 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from backend.app.db.db import get_db
-from backend.app.db.db_schemas import RoomPicture
+from backend.app.internal.home_page import HomePage
+from backend.app.format.format_for_get_all_rooms import GetSingleRoom, GetManyRooms, GetManyRoomsInput
 
-router = APIRouter()
-
-
-@router.get("/", tags=["home page info"])
-async def get_rooms(db: Session = Depends(get_db)):
-    return {
-            "message": "working",
-            "chek our docs": db.query(RoomPicture).all()
-            }
+router = APIRouter(
+    prefix="/api/v1/room",
+    tags=["Home page logic"],
+    responses={404: {"description": "Not found"}},
+)
 
 
-@router.get("/v1/rooms/{items_on_page}", tags=["home page info"])
-async def get_rooms(items_on_page: int):
-    return {
-            "message": "good",
-            "items_on_page": items_on_page
-            }
+@router.get("/get-many-pages/{amount_items_on_page:int}")
+async def get_rooms(
+    amount_items_on_page: int = 10,
+    db: Session = Depends(get_db)
+) -> list[GetManyRooms]:
+    """
+    Retrieve multiple items from the home page.
+
+    This endpoint retrieves multiple items from the home page based on the specified number of items per page.
+
+    Parameters:
+    - amount_items_on_page (int, optional): The number of items to be retrieved per page. Defaults to 10.
+
+    Returns:
+    - List[GetManyRooms]: A list of items retrieved from the home page.
+
+    Raises:
+    - HTTPException: If an error occurs during retrieval.
+    """
+    homepage = HomePage(db=db)
+    return await homepage.home_page_provide_many_items(amount_items_on_page)
 
 
-@router.get("/room", tags=["home page info"])
-async def get_room():
-    return {"message": "test"}
+@router.get("/get-single-page/{room_id:int}")
+async def get_rooms(
+    room_id: int = 1,
+    db: Session = Depends(get_db)
+) -> list[GetSingleRoom]:
+    """
+    Retrieve a single item from the home page by its ID.
+
+    This endpoint retrieves a single item from the home page based on the provided room ID.
+
+    Parameters:
+    - room_id (int, optional): The ID of the room to retrieve. Defaults to 1.
+
+    Returns:
+    - List[GetSingleRoom]: A list containing the retrieved item from the home page.
+
+    Raises:
+    - HTTPException: If the specified room ID is not found.
+    """
+    homepage = HomePage(db=db)
+    print(room_id)
+    return await homepage.home_page_provide_single_item(room_id)
