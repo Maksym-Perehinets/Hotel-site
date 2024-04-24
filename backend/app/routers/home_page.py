@@ -54,5 +54,4 @@ async def get_rooms(
     - HTTPException: If the specified room ID is not found.
     """
     homepage = HomePage(db=db)
-    print(room_id)
     return await homepage.home_page_provide_single_item(room_id)
