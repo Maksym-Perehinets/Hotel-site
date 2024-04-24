@@ -1,0 +1,30 @@
+#info-div {
+    width: 40%;
+    padding: 20px 20px;
+    margin-top: 4%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#info-div h1 {
+    text-align: center;
+    /* font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-size: 32px;
+}
+
+#info-div p {
+    font-size: 18px;
+}
+
+#info-div button {
+    text-align: right;
+    float: right;
+    text-align: center;
+}
+button {
+    width: 25%;
+    font-size: 18px;
+    text-align: center;
+    background-color: #fff;
+    border-color: silver;
+    border-radius: 5px;
+}

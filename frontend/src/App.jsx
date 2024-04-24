@@ -1,8 +1,9 @@
 import "./CSS/App.css";
-import {} from "./components";
+import Home from './pages/home.jsx'
+// import {} from "./components";
 
 function App() {
-  return <></>;
+  return <Home></Home> ;
 }
 
 export default App;
