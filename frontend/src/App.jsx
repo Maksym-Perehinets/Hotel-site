@@ -1,18 +1,8 @@
-import './App.css'
-import NavBar from './navbar'
-import './navbar.css'
-import Home from './home.jsx'
-
+import "./CSS/App.css";
+import {} from "./components";
 
 function App() {
-
-  return (
-    <>
-      <NavBar />
-      <Home/>
-
-    </>
-  )
+  return <></>;
 }
 
-export default App
+export default App;
