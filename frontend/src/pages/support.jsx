@@ -1,14 +1,12 @@
-import React from 'react'
-import '../CSS/support.css'
+// import React from 'react'
+import "../CSS/support.css";
 
 const support = () => {
   return (
     <>
-        <div id='main'>
-            
-        </div>
+      <div id="main"></div>
     </>
-  )
-}
+  );
+};
 
-export default support
+export default support;
