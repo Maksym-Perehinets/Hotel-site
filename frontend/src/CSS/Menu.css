@@ -1,0 +1,27 @@
+@font-face {
+  font-family: MainFont;
+  src: url(/src/assets/Fonts/Duo-quadruple_by_hanbikov_ilyas.otf);
+}
+
+#HeaderBackground {
+  background-color: rgb(235, 180, 110);
+  height: 150px;
+  width: 100%;
+}
+
+#text {
+  text-align: center;
+  font-size: 14px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.Buttons {
+  text-align: center;
+}
+
+#labelName {
+  font-size: 40px;
+  padding-top: 20px;
+  font-family: MainFont;
+  color: salmon;
+}

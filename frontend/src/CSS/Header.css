@@ -1,0 +1,14 @@
+@font-face {
+  font-family: MainFont;
+  src: url(/src/assets/Fonts/Duo-quadruple_by_hanbikov_ilyas.otf);
+}
+
+#fill {
+  text-align: right;
+}
+
+h1 {
+  text-align: center;
+  padding: 30px;
+  font-family: MainFont;
+}
