@@ -46,18 +46,6 @@ class GetManyRooms(BaseModel):
     picture_url: HttpUrl
 
 
-# Not used due to use fo path parameters
-class GetManyRoomsInput(BaseModel):
-    amount_items_on_page: int | None = 20
-
-    @field_validator("amount_items_on_page")
-    @classmethod
-    def validate_amount_items_on_page(cls, v: int) -> int:
-        if v <= 0 or v > 50:
-            raise ValidationError("invalid value should be from 1 to 50")
-        return v
-
-
 class GetRoomBookedDates(BaseModel):
     """
     Return model

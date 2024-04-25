@@ -6,8 +6,14 @@ from backend.app.config.config import config
 # Mysql connection string
 SQLALCHEMY_DATABASE_URL = f"mysql+pymysql://{ config.DB_USER }:{ config.DB_PASSWORD }@{config.DB_HOST}/mydb"
 
-engine = create_engine(SQLALCHEMY_DATABASE_URL)
-SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+engine = create_engine(
+    SQLALCHEMY_DATABASE_URL
+)
+SessionLocal = sessionmaker(
+    autocommit=False,
+    autoflush=False,
+    bind=engine
+)
 Base = declarative_base()
 
 

@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from backend.app.db.db import get_db
 from backend.app.internal.home_page import HomePage
-from backend.app.format.format_for_get_all_rooms import *
+from backend.app.format.format_rooms_output_input import *
 
 router = APIRouter(
     prefix="/api/v1/room",

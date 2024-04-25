@@ -15,5 +15,4 @@ class Settings(BaseSettings):
     CORS_ALLOWED_ORIGINS: str
 
 
-
 config = Settings()
