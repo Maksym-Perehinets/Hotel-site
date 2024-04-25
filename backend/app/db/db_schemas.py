@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, Text, ForeignKey, DateTime, JSON, Float, VARCHAR, BigInteger, Boolean
+from sqlalchemy import Column, Integer, Text, ForeignKey, DateTime, VARCHAR, Boolean
 from sqlalchemy.orm import relationship
 from sqlalchemy.ext.declarative import declarative_base
 
@@ -76,7 +76,7 @@ class UserAddress(Base):
 class BookedRoom(Base):
     __tablename__ = 'bookedRooms'
 
-    rooms_idrooms = Column(Integer, ForeignKey('rooms.idrooms'), primary_key=True, autoincrement=True)
+    id = Column(Integer, ForeignKey('rooms.idrooms'), primary_key=True, name="rooms_idrooms", autoincrement=True)
     users_idusers = Column(Integer, ForeignKey('users.idusers'), primary_key=True, autoincrement=True)
     start_date = Column(DateTime, nullable=False)
     end_date = Column(DateTime, nullable=False)

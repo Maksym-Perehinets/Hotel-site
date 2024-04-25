@@ -305,4 +305,20 @@ VALUES
 ('https://hote0site0tspp.blob.core.windows.net/images/hotel-room-picture-50.jpg', 50);
 
 
+-- Sample data for users table
+INSERT INTO users (idusers, username, email, phoneNumber, userBehaviour, user_first_name, user_last_name, user_password_salted)
+VALUES
+(1, 'john_doe', 'john.doe@example.com', '+1234567890', 'regular', 'John', 'Doe', 'hashed_password_1'),
+(2, 'jane_smith', 'jane.smith@example.com', '+1987654321', 'premium', 'Jane', 'Smith', 'hashed_password_2'),
+(3, 'alice_wonderland', 'alice@example.com', '+1122334455', 'regular', 'Alice', 'Wonderland', 'hashed_password_3');
+
+-- Sample data for bookedRooms table
+INSERT INTO bookedRooms (rooms_idrooms, users_idusers, start_date, end_date, overal_price)
+VALUES
+(1, 1, '2024-05-01', '2024-05-05', 500.00),
+(2, 2, '2024-06-10', '2024-06-15', 800.00),
+(3, 3, '2024-07-20', '2024-07-25', 700.00);
+
+
+
 

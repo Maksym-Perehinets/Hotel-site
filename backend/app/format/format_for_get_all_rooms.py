@@ -1,4 +1,5 @@
 from pydantic import BaseModel, HttpUrl, field_validator, ValidationError
+from datetime import date
 
 
 class GetSingleRoom(BaseModel):
@@ -55,3 +56,12 @@ class GetManyRoomsInput(BaseModel):
         if v <= 0 or v > 50:
             raise ValidationError("invalid value should be from 1 to 50")
         return v
+
+
+class GetRoomBookedDates(BaseModel):
+    """
+    Return model
+    """
+    id: int
+    start_date: date
+    end_date: date
