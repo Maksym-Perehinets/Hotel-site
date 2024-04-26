@@ -7,7 +7,7 @@ const Header = () => {
         <div>
           <AccounBtn />
         </div>
-        <h1>Hotel Reservation</h1>
+        <h1>Dnipro Vista Hotel</h1>
       </header>
     </div>
   );

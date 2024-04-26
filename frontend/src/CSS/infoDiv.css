@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
 #info-div {
-    width: 60%;
-    padding: 20px 20px;
+    width: 100%;
+    padding: 1% 5%;
     margin-top: 7.5%;
-    margin-left: 19%;
+    /* margin-left: 19%; */
+    padding-bottom: 10%;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: rgba(0, 0, 0, 0.705);
-    border-radius: 12px;
+    background-color: #846B8A;
+    /* border-radius: 12px; */
     color: #fff;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
@@ -30,12 +31,4 @@
     text-align: right;
     float: right;
     text-align: center;
-}
-button {
-    width: 25%;
-    font-size: 18px;
-    text-align: center;
-    background-color: #fff;
-    border-color: silver;
-    border-radius: 5px;
 }

@@ -6,7 +6,7 @@ import InfoDiv from "./home/infoDiv";
 const Home = () => {
   return (
     <>
-      <InfoDiv></InfoDiv>
+      {/* <InfoDiv></InfoDiv> */}
       {/* <PhotoDiv></PhotoDiv> */}
     </>
   );

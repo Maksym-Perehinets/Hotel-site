@@ -6,7 +6,7 @@ function Header() {
   return (
     <div id="HeaderBackground">
       <div id="text">
-        <h1 id="labelName">Around The World</h1>
+        <h1 id="labelName">We can offer</h1>
       </div>
       <div className="Buttons">
         <DinnigBtn />
