@@ -54,7 +54,7 @@ button:active > span {
 }
 
 button > svg {
-  fill: red;
+  fill: #CFA5B4;
   position: absolute;
   top: -5%;
   left: -5%;

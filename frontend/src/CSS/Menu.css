@@ -4,7 +4,7 @@
 }
 
 #HeaderBackground {
-  background-color: rgb(235, 180, 110);
+  background-color: #846B8A;
   height: 150px;
   width: 100%;
 }
@@ -23,5 +23,5 @@
   font-size: 40px;
   padding-top: 20px;
   font-family: MainFont;
-  color: salmon;
+  color: #C98BB9;
 }
