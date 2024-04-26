@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import "../CSS/ParalaxBanner.css";
 // import ImageSwap from "./imageChange";
 
-
 // eslint-disable-next-line react/prop-types
 export const ParalaxBanner = ({ name }) => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -17,12 +16,9 @@ export const ParalaxBanner = ({ name }) => {
   return (
     <section
       style={{
-        backgroundSize: `${(window.outerHeight - scrollPosition) / 3}%`,
+        backgroundSize: `${(window.outerHeight + scrollPosition) / 10}%`,
       }}
       className="banner container"
-    >
-      <h2>{name}</h2>
-      {/* <button>Get Started</button> */}
-    </section>
+    ></section>
   );
 };

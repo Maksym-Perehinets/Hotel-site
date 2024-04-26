@@ -8,11 +8,9 @@
   background-position: 20% 40%;
   /* background-position: center; */
   height: 600px;
-  min-width: 100%;
+  width: 1920px;
   transition: 0.8s linear;
 }
-
-
 
 .banner h2 {
   color: #f8f8f8;

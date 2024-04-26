@@ -8,6 +8,11 @@ COPY frontend/package.json ./
 COPY frontend/package-lock.json ./
 
 RUN npm install
+RUN npm i react-icons 
+RUN npm install sass \ 
+    && npm install sass -g\
+    && npm install -D sass \
+    && npm install -g sass
 
 # Add app
 COPY frontend/ .

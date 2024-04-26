@@ -2,6 +2,7 @@ import "../CSS/Menu.css";
 import DinnigBtn from "./ButtonsFloader/DinnigBtn";
 import RoomsBtn from "./ButtonsFloader/RoomsBtn";
 import BookStayBtn from "./ButtonsFloader/BookStayBtn";
+import HotelCheckInOutForm from "./CheckIn";
 function Header() {
   return (
     <div id="HeaderBackground">
@@ -12,6 +13,7 @@ function Header() {
         <DinnigBtn />
         <RoomsBtn />
         <BookStayBtn />
+        <HotelCheckInOutForm />
       </div>
     </div>
   );

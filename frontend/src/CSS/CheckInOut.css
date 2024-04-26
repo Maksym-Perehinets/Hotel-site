@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+form {
+  max-width: 800px; /* Increase the max-width for horizontal layout */
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex; /* Display form items in a flex container */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+h2 {
+  text-align: center;
+  width: 100%; /* Ensure h2 takes full width */
+}
+
+label {
+  flex: 1; /* Each label takes up equal space */
+  margin-bottom: 10px;
+  padding-right: 10px; /* Add spacing between label and input */
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+input[type="date"],
+input[type="number"] {
+  flex: 2; /* Each input takes up double the space of label */
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: calc(100% - 22px); /* Adjust width to account for border and padding */
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
