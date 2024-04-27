@@ -1,4 +1,5 @@
 import { useState } from "react";
+import '../CSS/CheckInOut.css';
 
 function HotelCheckInOutForm() {
   const [rooms, setRooms] = useState("");
@@ -24,8 +25,8 @@ function HotelCheckInOutForm() {
   };
 
   return (
-    <div>
-      <h2>Hotel Check-in/Check-out Form</h2>
+    <div id="formDiv">
+      <h2 id="checkInOutLabel">Hotel Check-in/Check-out Form</h2>
       <form onSubmit={handleSubmit}>
         <label htmlFor="checkin">Check-in Date:</label>
         <input type="date" id="checkin" name="checkin" required />
@@ -67,7 +68,6 @@ function HotelCheckInOutForm() {
           onChange={(e) => setChildren(e.target.value)}
           required
         />
-
         <input type="submit" value="Submit" />
       </form>
     </div>
