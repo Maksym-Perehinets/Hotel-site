@@ -15,6 +15,8 @@ RUN npm install sass \
     && npm install -g sass \
     && npm i react-router-dom
 
+RUN  npm install axios
+
 # Add app
 COPY frontend/ .
 

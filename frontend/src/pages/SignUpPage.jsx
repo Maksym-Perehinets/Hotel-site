@@ -1,5 +1,5 @@
 // import React from 'react';
-// import "../CSS/SignUp/SignUp.css";
+import "../CSS/SignUp/SignUp.css";
 // import "../CSS/SignUp/SignUp1.css";
 
 function SignUpPage() {
@@ -10,10 +10,12 @@ function SignUpPage() {
 
         <div className="signup">
           <form>
-            <label htmlFor="chk" aria-hidden="true">
+            <label className="signuplabel" htmlFor="chk" aria-hidden="true">
               Sign up
             </label>
-            <input type="text" name="txt" placeholder="User name" required />
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="text" name="secname" placeholder="Second Name" required />
+            <input type="tel" name="phone" placeholder="Phone Number" required />
             <input type="email" name="email" placeholder="Email" required />
             <input
               type="password"
@@ -26,11 +28,12 @@ function SignUpPage() {
         </div>
 
         <div className="login">
-          <form>
+          <form id="loginForm">
             <label htmlFor="chk" aria-hidden="true">
               Login
             </label>
             <input type="email" name="email" placeholder="Email" required />
+            <input type="tel" name="phone" placeholder="Phone Number" required />
             <input
               type="password"
               name="pswd"
