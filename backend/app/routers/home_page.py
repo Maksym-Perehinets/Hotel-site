@@ -11,7 +11,9 @@ router = APIRouter(
 )
 
 
-@router.get("/get-many-rooms/{amount_items_on_page:int}")
+@router.get(
+    "/get-many-rooms/{amount_items_on_page:int}"
+)
 async def get_rooms(
     amount_items_on_page: int = 10,
     db: Session = Depends(get_db)
@@ -34,7 +36,9 @@ async def get_rooms(
     return await homepage.home_page_provide_many_items(amount_items_on_page)
 
 
-@router.get("/get-single-room/{room_id:int}")
+@router.get(
+    "/get-single-room/{room_id:int}"
+)
 async def get_rooms(
     room_id: int = 1,
     db: Session = Depends(get_db)
@@ -57,7 +61,9 @@ async def get_rooms(
     return await homepage.home_page_provide_single_item(room_id)
 
 
-@router.get("/get-date-for-booked-room/{room_id:int}")
+@router.get(
+    "/get-date-for-booked-room/{room_id:int}"
+)
 async def get_rooms(
     room_id: int = 1,
     db: Session = Depends(get_db)

@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from . import home_page
+from . import home_page, authentication
 
 
 def get_apps_router():
@@ -8,4 +8,7 @@ def get_apps_router():
     """
     router = APIRouter()
     router.include_router(home_page.router)
+    router.include_router(authentication.router)
     return router
+
+
