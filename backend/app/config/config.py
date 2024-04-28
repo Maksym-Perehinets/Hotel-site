@@ -13,6 +13,7 @@ class Settings(BaseSettings):
     VERSION: str
     DEBUG: bool
     CORS_ALLOWED_ORIGINS: str
+    KICKBOX_API_TOKEN: str
 
 
 config = Settings()

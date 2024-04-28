@@ -55,11 +55,11 @@ class User(Base):
     idusers = Column(Integer, primary_key=True, autoincrement=True)
     username = Column(VARCHAR(45), nullable=False)
     email = Column(VARCHAR(100), nullable=False)
-    phoneNumber = Column(VARCHAR(45), nullable=False)
-    userBehaviour = Column(VARCHAR(255), nullable=False)
-    user_first_name = Column(VARCHAR(45), nullable=False)
-    user_last_name = Column(VARCHAR(45), nullable=False)
-    user_password_salted = Column(VARCHAR(45))
+    phone_number = Column(VARCHAR(45), name="phoneNumber", nullable=False)
+    behaviour = Column(VARCHAR(255), name="userBehaviour", nullable=False)
+    first_name = Column(VARCHAR(45), name="user_first_name", nullable=False)
+    last_name = Column(VARCHAR(45), name="user_last_name", nullable=False)
+    password = Column(VARCHAR(45), name="user_password_salted")
 
 
 class UserAddress(Base):
