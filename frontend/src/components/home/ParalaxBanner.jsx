@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
-import "../CSS/ParalaxBanner.css";
+import "../../CSS/ParalaxBanner.css";
 // import ImageSwap from "./imageChange";
 
-// eslint-disable-next-line react/prop-types
 export const ParalaxBanner = ({ name }) => {
   const [scrollPosition, setScrollPosition] = useState(0);
 

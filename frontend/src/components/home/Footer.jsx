@@ -1,6 +1,5 @@
-// import { SocialBtn } from "./ButtonsFloader/ContactUs/SocialBtn";
 import { FaDiscord, FaRedditAlien, FaGithub } from "react-icons/fa6";
-import "../CSS/Footer.scss";
+import "../../CSS/Footer.scss";
 
 const Footer = () => {
   const links = [

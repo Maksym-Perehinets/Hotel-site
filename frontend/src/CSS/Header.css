@@ -16,7 +16,7 @@
   src: url(/src/assets/Fonts/Madelin-RegularDemo.ttf);
 }
 @font-face {
-  font-family: Brown ;
+  font-family: Brown;
   src: url(/src/assets/Fonts/BrownCasalova_Demo.ttf);
 }
 
@@ -28,4 +28,8 @@ h1 {
   text-align: center;
   padding: 30px;
   font-family: Brown;
+}
+
+#AccountDiv {
+  position: absolute;
 }

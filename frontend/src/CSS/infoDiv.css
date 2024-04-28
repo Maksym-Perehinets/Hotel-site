@@ -1,34 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 
 #info-div {
-    width: 100%;
-    padding: 1% 5%;
-    margin-top: 250px;
-    /* margin-left: 19%; */
-    padding-bottom: 10%;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: #846B8A;
-    /* border-radius: 12px; */
-    color: #fff;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
+  width: 100%;
+  padding: 1% 5%;
+  /* margin-top: 250px; */
+  position: relative;
+  padding-bottom: 10%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: #846b8a;
 
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
 }
 
 #info-div h1 {
-    text-align: center;
-    /* font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
-    font-size: 32px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
+  text-align: center;
+  /* font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+  font-size: 32px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 
 #info-div p {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 #info-div button {
-    text-align: right;
-    float: right;
-    text-align: center;
+  text-align: right;
+  float: right;
+  text-align: center;
 }

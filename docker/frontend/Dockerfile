@@ -12,7 +12,8 @@ RUN npm i react-icons
 RUN npm install sass \ 
     && npm install sass -g\
     && npm install -D sass \
-    && npm install -g sass
+    && npm install -g sass \
+    && npm i react-router-dom
 
 # Add app
 COPY frontend/ .

@@ -1,21 +1,16 @@
-import React from 'react'
 import "../../CSS/infoDiv.css";
 // import ShowMoreText from "react-show-more-text";
 
-
-
-
 const InfoDiv = () => {
-
   return (
     <div id="info-div">
-       <h1>Read about our hotel</h1>
+      <h1>Read about our hotel</h1>
       <p>
-        Welcome to the Dnipro Vista Hotel, a luxurious hotel nestled in the heart
-        of Kyiv, Ukraine, overlooking the picturesque Dnipro River. Boasting a
-        prime location, our hotel offers guests the perfect blend of tranquility
-        and convenience, making it an ideal choice for both leisure and business
-        travelers alike.
+        Welcome to the Dnipro Vista Hotel, a luxurious hotel nestled in the
+        heart of Kyiv, Ukraine, overlooking the picturesque Dnipro River.
+        Boasting a prime location, our hotel offers guests the perfect blend of
+        tranquility and convenience, making it an ideal choice for both leisure
+        and business travelers alike.
       </p>
       <br />
       <p>
@@ -32,9 +27,6 @@ const InfoDiv = () => {
         plush furnishings, crisp linens, and state-of-the-art technology to
         ensure a comfortable and memorable stay.
       </p>
-      
-      
-      
     </div>
   );
 };

@@ -20,7 +20,7 @@
 } */
 
 #HeaderBackground {
-  background-color: #846B8A;
+  background-color: #846b8a;
   height: 150px;
   width: 100%;
 }
@@ -39,5 +39,5 @@
   font-size: 40px;
   padding-top: 20px;
   font-family: HeaderFontSecond;
-  color: #C98BB9;
+  color: #c98bb9;
 }

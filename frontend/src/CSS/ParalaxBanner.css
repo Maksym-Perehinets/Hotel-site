@@ -5,10 +5,10 @@
   flex-direction: column;
   background-image: url("https://hote0site0tspp.blob.core.windows.net/images/main-page.jpg");
   background-repeat: no-repeat;
-  background-position: 20% 40%;
+  background-position: 50% 40%;
   /* background-position: center; */
   height: 600px;
-  width: 1920px;
+  width: 100%;
   transition: 0.8s linear;
 }
 
