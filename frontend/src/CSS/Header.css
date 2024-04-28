@@ -3,6 +3,23 @@
   src: url(/src/assets/Fonts/Duo-quadruple_by_hanbikov_ilyas.otf);
 }
 
+@font-face {
+  font-family: HeaderFont;
+  src: url(/src/assets/Fonts/IBMPlexSerif-Regular.ttf);
+}
+@font-face {
+  font-family: HeaderFontSecond;
+  src: url(/src/assets/Fonts/IBMPlexMono-Regular.ttf);
+}
+@font-face {
+  font-family: Madelin;
+  src: url(/src/assets/Fonts/Madelin-RegularDemo.ttf);
+}
+@font-face {
+  font-family: Brown;
+  src: url(/src/assets/Fonts/BrownCasalova_Demo.ttf);
+}
+
 #fill {
   text-align: right;
 }
@@ -10,5 +27,9 @@
 h1 {
   text-align: center;
   padding: 30px;
-  font-family: MainFont;
+  font-family: Brown;
+}
+
+#AccountDiv {
+  position: absolute;
 }

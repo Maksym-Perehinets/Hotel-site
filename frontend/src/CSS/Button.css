@@ -27,7 +27,6 @@ button {
   padding: 1em 1.5em;
   position: relative;
   transition: filter var(--motion-duration);
-  margin-top: 5px;
 }
 
 button:hover {
@@ -54,7 +53,7 @@ button:active > span {
 }
 
 button > svg {
-  fill: red;
+  fill: #cfa5b4;
   position: absolute;
   top: -5%;
   left: -5%;

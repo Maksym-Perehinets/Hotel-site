@@ -1,10 +1,26 @@
-@font-face {
+/* @font-face {
   font-family: MainFont;
   src: url(/src/assets/Fonts/Duo-quadruple_by_hanbikov_ilyas.otf);
+} */
+@font-face {
+  font-family: HeaderFont;
+  src: url(/src/assets/Fonts/IBMPlexSerif-Regular.ttf);
 }
+@font-face {
+  font-family: HeaderFontSecond;
+  src: url(/src/assets/Fonts/IBMPlexMono-Regular.ttf);
+}
+@font-face {
+  font-family: Madelin;
+  src: url(/src/assets/Fonts/Madelin-RegularDemo.ttf);
+}
+/* @font-face {
+  font-family: Antipasto;
+  src: url(/src/assets/Fonts/antipasto.medium.ttf);
+} */
 
 #HeaderBackground {
-  background-color: rgb(235, 180, 110);
+  background-color: #846b8a;
   height: 150px;
   width: 100%;
 }
@@ -22,6 +38,6 @@
 #labelName {
   font-size: 40px;
   padding-top: 20px;
-  font-family: MainFont;
-  color: salmon;
+  font-family: HeaderFontSecond;
+  color: #c98bb9;
 }

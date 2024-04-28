@@ -1,17 +1,14 @@
-import "./CSS/App.css";
-import Header from "./components/Header";
-import Menu from "./components/Menu";
-// import "./CSS/Menu.css";
-import { ParalaxBanner } from "./components/ParalaxBanner";
-function App() {
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/home.jsx";
+import SignUpPage from "./pages/SignUpPage";
+const App = () => {
   return (
-    <div>
-      <Header />
-      <ParalaxBanner />
-      <Menu />
-      <h1 id="Label">HotelWeb</h1>
-      <div id="aboba1"></div>
-    </div>
+    <main>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/SignUp" element={<SignUpPage />}></Route>
+      </Routes>
+    </main>
   );
-}
+};
 export default App;

@@ -1,15 +1,20 @@
-// import React from 'react'
-import "../CSS/home.css";
-import InfoDiv from "./home/infoDiv";
-// import PhotoDiv from './home/photo-div'
+import Header from "../components/home/Header";
+import { ParalaxBanner } from "../components/home/ParalaxBanner.jsx";
+import Menu from "../components/home/Menu.jsx";
+import HotelCheckInOutForm from "../components/home/CheckIn.jsx";
+import InfoDiv from "../components/home/infoDiv.jsx";
+import Footer from "../components/home/Footer.jsx";
 
-const Home = () => {
+function Home() {
   return (
     <>
-      <InfoDiv></InfoDiv>
-      {/* <PhotoDiv></PhotoDiv> */}
+      <Header />
+      <ParalaxBanner />
+      <Menu />
+      <HotelCheckInOutForm />
+      <InfoDiv />
+      <Footer />
     </>
   );
-};
-
+}
 export default Home;

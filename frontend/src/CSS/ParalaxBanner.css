@@ -3,12 +3,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url("../assets/hdtestPhoto.jpg");
-  background-size: 100%;
+  background-image: url("https://hote0site0tspp.blob.core.windows.net/images/main-page.jpg");
   background-repeat: no-repeat;
-  background-position: 55% 70%;
+  background-position: 50% 40%;
+  /* background-position: center; */
   height: 600px;
-  min-width: 100%;
+  width: 100%;
   transition: 0.8s linear;
 }
 
