@@ -1,11 +1,9 @@
 import "../../CSS/Button.css";
-import { useNavigate } from 'react-router-dom'
+// import { useNavigate } from 'react-router-dom'
 const RoomsBtn = () => {
-  const navigate = useNavigate();
-  const handleClick = () => navigate("/NumberView");
   return (
     <>
-      <button onClick={handleClick}>
+      <button>
         <span>Rooms</span>
         <svg
           viewBox="-5 -5 110 110"

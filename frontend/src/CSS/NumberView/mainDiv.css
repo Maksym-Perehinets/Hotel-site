@@ -3,20 +3,39 @@ body {
     margin: 0px;
 }
 .mainDiv {
-    height: 1200px;
+    height: 600px;
     width: 100%;
     background-color: #e5d0f5;
-    /* margin-top: 5%; */
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    text-align: center;
-    /* padding: 50px 50px; */
-    /* display: flex; */
+    display: inline-block;
+
 }
 
-.mainDiv {
-    display: inline-flex;
+
+.mainDiv img {
+    height:max-content;
+    height: 450px;
+    width: 600px;
+    float: right;
+    object-fit: cover;
+    margin-right: 5%;
+    box-shadow: 5px 10px 50px #ffe7e9;
+    border-radius: 10px;
 }
+
+.mainDiv div {
+    display:inline;
+
+}
+
+.mainDiv label {
+    font-family: HeaderFontSecond;
+    font-size: 2em;
+    display: block;
+    /* padding-bottom: 30%; */
+    margin-top: 3%;
+    color: #846b8a;
+}
+
 
 
     

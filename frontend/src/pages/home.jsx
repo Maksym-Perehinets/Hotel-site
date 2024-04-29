@@ -4,6 +4,7 @@ import Menu from "../components/home/Menu.jsx";
 import HotelCheckInOutForm from "../components/home/CheckIn.jsx";
 import InfoDiv from "../components/home/infoDiv.jsx";
 import Footer from "../components/home/Footer.jsx";
+import MainDiv from "../components/numberView/MainDiv.jsx";
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <ParalaxBanner />
       <Menu />
       <HotelCheckInOutForm />
+      <MainDiv />
       <InfoDiv />
       <Footer />
     </>

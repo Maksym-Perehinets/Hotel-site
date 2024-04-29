@@ -1,18 +1,29 @@
+
 .selectDiv {
-    margin-top: 5%;
-    margin-left: 10%;
-    padding: 10px 10px;
+    margin-left: 15%;
+    padding: 0px 0px;
+
 }
 .selectDiv select {
     padding: 2px 2px;
-    margin-left: 10px;
+    margin-left: 12px;
     background-color: #c5aaf7;
     outline: none;
     border: 0px;
     border-radius: 5px;
     font-size: 1em;
+    text-align: center;
+    /* display: block; */
+    margin-bottom: 2%;
+    margin-top: 5%;
 }
+
+.selectDiv select option {
+    text-align: left;
+}
+
 
 .selectDiv span {
     font-size: 1.2em;
 }
+
