@@ -1,0 +1,32 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+.mainDiv {
+    height: 1200px;
+    width: 100%;
+    background-color: #e5d0f5;
+    /* margin-top: 5%; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    /* padding: 50px 50px; */
+    /* display: flex; */
+}
+
+.mainDiv {
+    display: inline-flex;
+}
+
+
+    
+
+/* .roomPhotoDiv {
+    margin-top: 100px;
+    width: 50%;
+    height: 60%;
+    background-color: aqua;
+    margin-left: 10%;
+    border-radius: 10px;
+    float: right;
+} */
