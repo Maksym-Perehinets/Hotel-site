@@ -1,0 +1,41 @@
+#fill {
+  letter-spacing: 1px;
+  padding: 10px 10px 0px 0px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: absolute;
+  background-color: #c98bb9;
+  margin-left: 95%;
+  top: 15px;
+}
+
+#fill::after {
+  content: "";
+  background-color: #846b8a;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  top: 3px;
+  left: -3px;
+  transition: 0.2s;
+}
+
+#fill:hover::after {
+  top: 0px;
+  left: 0px;
+}
+
+#TextInBtn {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+img {
+  width: 40px;
+  position: relative;
+  z-index: 2;
+  left: 3px;
+  bottom: 4px;
+}

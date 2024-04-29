@@ -1,7 +1,3 @@
-/* @font-face {
-  font-family: MainFont;
-  src: url(/src/assets/Fonts/Duo-quadruple_by_hanbikov_ilyas.otf);
-} */
 @font-face {
   font-family: HeaderFont;
   src: url(/src/assets/Fonts/IBMPlexSerif-Regular.ttf);
@@ -14,10 +10,6 @@
   font-family: Madelin;
   src: url(/src/assets/Fonts/Madelin-RegularDemo.ttf);
 }
-/* @font-face {
-  font-family: Antipasto;
-  src: url(/src/assets/Fonts/antipasto.medium.ttf);
-} */
 
 #HeaderBackground {
   background-color: #846b8a;

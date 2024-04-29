@@ -1,0 +1,120 @@
+$color_1: #ffffff;
+$color_2: #fff;
+$color_3: #573b8a;
+
+.aboba {
+  justify-content: center;
+  display: flex;
+  margin: 10%;
+  margin-top: 1%;
+  margin-bottom: 5%;
+
+  .main {
+    #chk {
+      display: none;
+      &:checked {
+        ~ {
+          .login {
+            transform: translateY(-650px);
+            border-radius: 60% / 10%;
+            label {
+              transform: scale(1);
+              margin-bottom: 80px;
+            }
+          }
+          .signup {
+            label {
+              transform: scale(0.8);
+            }
+          }
+        }
+      }
+    }
+
+    .signup {
+      height: 100%;
+
+      form {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+    label {
+      color: $color_1;
+      font-size: 3.3em;
+      justify-content: center;
+      display: flex;
+      margin: 60px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.5s ease-in-out;
+    }
+
+    input {
+      width: 65%;
+      height: 40px;
+      background: #e0dede;
+      justify-content: center;
+      display: flex;
+      margin: 20px auto;
+      margin-top: 10px;
+      padding: 10px;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+    }
+    button {
+      width: 60%;
+      height: 40px;
+      margin: 10px auto;
+      justify-content: center;
+      align-items: center;
+      display: inline-flex;
+      color: $color_2;
+      background: #573b8a;
+      font-size: 1em;
+      font-weight: bold;
+      margin-top: 20px;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      transition: 0.2s ease-in;
+      cursor: pointer;
+      &:hover {
+        background: #6d44b8;
+      }
+    }
+    .login {
+      background: #eee;
+      border-radius: 60% / 10%;
+      transform: translateY(-180px);
+      transition: 0.8s ease-in-out;
+      label {
+        color: $color_3;
+        transform: scale(0.6);
+        text-align: center;
+        margin-top: 10px;
+      }
+      #loginForm {
+        width: 100%;
+        display: block;
+        height: 1000px;
+      }
+    }
+  }
+
+  .main {
+    margin: 0px;
+
+    text-align: center;
+    width: 600px;
+    height: 800px;
+    background: #846b8a;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px #000;
+  }
+}
