@@ -5,3 +5,29 @@
 body {
   background-color: #fce9e9;
 }
+@font-face {
+  font-family: 'IBMPlexMono';
+  src: url(./frontend/src/assets/Fonts/IBMPlexMono-Regular.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: MainFont;
+  src: url(/src/assets/Fonts/Duo-quadruple_by_hanbikov_ilyas.otf);
+}
+
+@font-face {
+  font-family: HeaderFont;
+  src: url(/src/assets/Fonts/IBMPlexSerif-Regular.ttf);
+}
+@font-face {
+  font-family: HeaderFontSecond;
+  src: url(/src/assets/Fonts/IBMPlexMono-Regular.ttf);
+}
+@font-face {
+  font-family: Madelin;
+  src: url(/src/assets/Fonts/Madelin-RegularDemo.ttf);
+}
+@font-face {
+  font-family: Brown;
+  src: url(/src/assets/Fonts/BrownCasalova_Demo.ttf);
+}
