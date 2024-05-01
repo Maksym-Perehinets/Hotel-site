@@ -23,7 +23,7 @@ class CreateUserRequest(BaseModel):
     def validate_email(cls, v: str):
         return Validation.email(v)
 
+
 class Token(BaseModel):
     access_token: str
     token_type: str
-
