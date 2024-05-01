@@ -27,3 +27,94 @@
     font-size: 1.2em;
 }
 
+.mainDiv .container {
+    display: inline-block;
+    padding: 10px 10px;
+    width: 100%;
+    float: left;
+}
+
+.container .economy-div {
+    display: inline-block;
+    width: 33%;
+    background-color: rgba(0, 128, 0, 0.26);
+    padding: 5px 5px;
+    height: 585px;
+    border-radius: 10px;
+}
+
+.container .standard-div {
+    display: inline-block;
+    width: 33%;
+    margin-left: .3%;
+    background-color: rgba(240, 128, 128, 0.26);
+    padding: 5px 5px;
+    height: 585px;
+    border-radius: 10px;
+}
+
+.container .deluxe-div {
+    display: inline-block;
+    width: 33%;
+    margin-left: .3%;
+    background-color: rgba(65, 105, 225, 0.26);
+    padding: 5px 5px;
+    height: 585px;
+    border-radius: 10px;
+}
+
+.container .lux-div {
+    display: block;
+    padding-top: 7px;
+}
+.container .suite-div {
+    display: inline-block;
+    background-color: rgba(255, 217, 0, 0.26);
+    padding: 5px 5px;
+    width: 49.5%;
+    height: 585px;
+    border-radius: 10px;
+}
+
+.container .penthouse-div {
+    display: inline-block;
+    width: 49.5%;
+    background-color: rgba(255, 217, 0, 0.39);
+    padding: 5px 5px;
+    height: 585px;
+    margin-left: .5%;
+    border-radius: 10px;
+}
+
+.mainDiv .container span {
+    float: right;
+    margin-right: 7%;
+    margin-top: 5%;
+    color: rgba(0, 0, 0, 0.76);
+    font-family: HeaderFontSecond;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+.mainDiv .container p {
+    display:inline-table;
+    margin-top: 5%;
+    font-size: 0.95em;
+}
+
+.mainDiv .container .bookBtn {
+    background-color: #e5d0f5;
+    position: relative;
+    float: right;
+    color: black;
+    width: 50%;
+    border-radius: 10px;
+    margin-top: 10%;
+    margin-right: 5%;
+    bottom: 10px;
+    padding: 10px 10px;
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: rgba(0, 0, 0, 0.5);
+    
+}

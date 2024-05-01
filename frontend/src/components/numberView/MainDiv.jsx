@@ -5,7 +5,7 @@ import SelectRoomDiv from '../../components/numberView/SelectRoomDiv';
 const MainDiv = () => {
   return (
     <div className='mainDiv'>
-      <label htmlFor="">Rooms</label>
+      {/* <label htmlFor="">Rooms</label> */}
         <SelectRoomDiv />
     </div>
   )

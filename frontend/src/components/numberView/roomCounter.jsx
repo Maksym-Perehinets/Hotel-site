@@ -1,10 +1,8 @@
 import { useState, useEffect } from 'react'
 
 const RoomCounter = () => {
-    const [roomStatus, setRoomStatus] = useState(1);
+    // const [roomStatus, setRoomStatus] = useState(1);
     const [picIndex, setPicIndex] = useState(1);
-
-
     useEffect(() => {
         const id = setInterval(() => {
           setPicIndex((oldCount) => (oldCount >= 18 ? 1 : oldCount + 1));
@@ -30,26 +28,73 @@ const RoomCounter = () => {
     const imgArray = [imgArrayEconomy, imgArrayStandard, imgArrayDeluxe,
         imgArraySuite, imgArrayPenthouse];
 
-    const handleSelectChange = (event) => {
-        setRoomStatus(event.target.value);
-    };
-
   return (
     <>
-            <span>Room Class</span>
-        <select onChange={handleSelectChange} name="floor">
-        <option selected disabled></option>
-            <option value="4">Economy</option>
-            <option value="0">Standard</option>
-            <option value="1">Deluxe</option>
-            <option value="2">Suite</option>
-            <option value="3">Penthouse</option>
-        </select>
-        <div className='roomPicDiv'>
-        <img
-        className='roomPics'
-        src={"https://hote0site0tspp.blob.core.windows.net/images/hotel-room-picture-"+imgArray[roomStatus][picIndex]+".jpg"}
-        alt={'No Image😭😭😭'} />
+        <div className='container'>
+          <div className='economy-div'>
+              <span>Economy</span>
+              <img 
+              src={"https://hote0site0tspp.blob.core.windows.net/images/hotel-room-picture-"+imgArray[0][picIndex]+".jpg"} 
+              alt="No Image😭😭😭" />
+              <p>Compact yet comfortable, the economy option provides essential 
+                amenities for a budget-conscious traveler. 
+                It offers a cozy space with basic furnishings and facilities, 
+                ideal for those seeking affordability without compromising too 
+                much on comfort.</p>
+                <button className='bookBtn'>Book it</button>
+          </div>
+
+          <div className='standard-div'>
+              <span>Standard</span>
+              <img 
+              src={"https://hote0site0tspp.blob.core.windows.net/images/hotel-room-picture-"+imgArray[1][picIndex]+".jpg"} 
+              alt="No Image😭😭😭" />
+              <p>The standard room strikes a balance between value and 
+                comfort, catering to the needs of most travelers. It typically includes 
+                a well-appointed living space with standard amenities, providing a comfortable 
+                stay for both business and leisure guests.</p>
+                <button className='bookBtn'>Book it</button>
+          </div>
+
+          <div className='deluxe-div'>
+              <span>Deluxe</span>
+              <img 
+              src={"https://hote0site0tspp.blob.core.windows.net/images/hotel-room-picture-"+imgArray[2][picIndex]+".jpg"} 
+              alt="No Image😭😭😭" />
+              <p>The deluxe room offers an elevated level of comfort 
+                , with upscale furnishings and luxurious amenities. 
+                Guests can expect spacious accommodations, premium bedding, and additional 
+                perks, creating atmosphere for a memorable stay.</p>
+                <button className='bookBtn'>Book it</button>
+          </div>
+
+          <div className='lux-div'>
+          <div className='suite-div'>
+              <span>Suite</span>
+              <img 
+              src={"https://hote0site0tspp.blob.core.windows.net/images/hotel-room-picture-"+imgArray[3][picIndex]+".jpg"} 
+              alt="No Image😭😭😭" />
+              <p>The suite presents a spacious and elegant retreat, perfect for 
+                guests seeking extra comfort and privacy. Featuring separate living 
+                and sleeping areas, along with enhanced amenities such as a mini-bar 
+                or a private balcony, the suite offers a luxurious experience for 
+                discerning travelers.</p>
+                <button className='bookBtn'>Book it</button>
+          </div>
+
+          <div className='penthouse-div'>
+              <span>Penthouse</span>
+              <img 
+              src={"https://hote0site0tspp.blob.core.windows.net/images/hotel-room-picture-"+imgArray[4][picIndex]+".jpg"} 
+              alt="No Image😭😭😭" />
+              <p>The penthouse epitomizes luxury and exclusivity, 
+                providing the pinnacle of accommodation within a hotel. Boasting 
+                expansive living spaces, bespoke furnishings, and breathtaking views, 
+                the penthouse offers an unparalleled level of opulence and sophistication 
+                for the most discerning guests.</p>
+                <button className='bookBtn'>Book it</button>
+          </div>
+          </div>
         </div>
     </>
   )
