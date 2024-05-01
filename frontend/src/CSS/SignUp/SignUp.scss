@@ -1,6 +1,9 @@
 $color_1: #ffffff;
 $color_2: #fff;
 $color_3: #573b8a;
+$color_4: #000;
+$color_5: green;
+$color_6: red;
 
 .aboba {
   justify-content: center;
@@ -108,7 +111,6 @@ $color_3: #573b8a;
 
   .main {
     margin: 0px;
-
     text-align: center;
     width: 600px;
     height: 800px;
@@ -116,5 +118,37 @@ $color_3: #573b8a;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 5px 20px 50px #000;
+  }
+}
+#message {
+  display: none;
+  background: #f1f1f1;
+  color: $color_4;
+  position: absolute;
+  padding: 20px;
+  margin-top: 420px;
+  margin-left: 770px;
+  border-radius: 20px;
+  p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+  .valid {
+    color: $color_5;
+  }
+}
+.valid {
+  &:before {
+    position: relative;
+    left: -35px;
+    content: "Good!";
+  }
+}
+.invalid {
+  color: $color_6;
+  &:before {
+    position: relative;
+    left: -35px;
+    content: "Deny";
   }
 }
