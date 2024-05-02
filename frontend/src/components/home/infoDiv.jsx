@@ -4,10 +4,10 @@ import "../../CSS/infoDiv.css";
 const InfoDiv = () => {
   return (
     <div id="info-div">
-      <h1>Read about our hotel</h1>
+      <h1>About us</h1>
       <p>
         Welcome to the Dnipro Vista Hotel, a luxurious hotel nestled in the
-        heart of Kyiv, Ukraine, overlooking the picturesque Dnipro River.
+        heart of Kyiv, Ukraine, overlooking the views of Dnipro River.
         Boasting a prime location, our hotel offers guests the perfect blend of
         tranquility and convenience, making it an ideal choice for both leisure
         and business travelers alike.

@@ -47,7 +47,7 @@ const Footer = () => {
         <a id="DiscordLink" href="https://discord.com/">
           <FaDiscord />
         </a>
-        <a id="GitHubLink" href="https://github.com/">
+        <a id="GitHubLink" href="https://github.com/Maksym-Perehinets/Hotel-site">
           <FaGithub />
         </a>
         <a id="RedditLink" href="https://www.reddit.com/">

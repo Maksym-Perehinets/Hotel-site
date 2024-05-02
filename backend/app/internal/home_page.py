@@ -1,10 +1,8 @@
 from backend.app.db.db_schemas import *
+from .common_db import CommonDb
 
 
-class HomePage:
-    def __init__(self, db):
-        self.db = db
-
+class HomePage(CommonDb):
     async def home_page_provide_many_items(
             self,
             count):
@@ -82,4 +80,3 @@ class HomePage:
             BookedRoom.id == room_id
         )
         return query_result.all()
-

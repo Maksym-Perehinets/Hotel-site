@@ -22,4 +22,4 @@ def create_user(
         new_user: CreateUserRequest,
         db: Session = Depends(get_db)
 ):
-    print(new_user)
+    pass
